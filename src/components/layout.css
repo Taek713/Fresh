@@ -1,0 +1,520 @@
+:root {
+    font-family: Times New Roman, Times, serif;
+    line-height: 1.5;
+    font-size: calc(1em + 0.33vw);
+  }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  * + *:not(li) {
+    margin-top: 1.5rem;
+  }
+  
+  p + p {
+    margin-top: 0.75rem;
+  }
+  
+  b {
+    font-weight: normal;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    line-height: 1.125;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    overflow: hidden;
+    padding: 1.5rem 0;
+    border-style: solid;
+    border-width: 2px 0 2px 0;
+    outline: 2px solid;
+    outline-offset: 4px;
+    animation: swell 1s infinite  ease-in alternate;
+  }
+  
+  h1 span, h1 em {
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  h1 em {
+    font-size: 5rem;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+  
+  h1 span {
+    letter-spacing: 0.25rem;
+    font-weight: normal;
+    font-size: 35px;
+  }
+  
+  h1 i {
+    position: relative;
+    animation: switch 1s infinite ease-in alternate;
+  }
+  
+  a {
+    text-decoration-skip: ink;
+    color: inherit;
+  }
+  
+  i:first-of-type {
+    animation-delay: 0.25s
+  }
+  
+  i:nth-of-type(2) {
+    animation-delay: 0.5s
+  }
+  
+  i:nth-of-type(3) {
+    animation-delay: 0.75s
+  }
+  
+  @keyframes switch {
+    0% {
+      top: -2px;
+    }
+    100% {
+      top: 2px;
+    }
+  }
+  
+  @keyframes swell {
+    0% {
+      outline-width: 2px;
+    }
+    100% {
+      outline-width: 10px;
+    }
+  }
+  
+  .content {
+    max-width: 35em;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+  }
+  
+  .content > p:first-child:first-letter {
+    font-size: 3em;
+    line-height: 1;
+    margin-right: 0.125rem;
+    float: left;
+    display: inline-block;
+    height: 2.5rem;
+  }
+  @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    overflow: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  }
+  body,
+  body * {
+    transform-style: preserve-3d;
+  }
+  
+  .container {
+    padding: 10%;
+    max-width: 40em;
+    margin: auto;
+  }
+  .container :nth-child(1) {
+    transform: translateZ(-0.4px) scale(1.4);
+    z-index: -400;
+    top: 200px;
+    left: 200px;
+  }
+  .container :nth-child(2) {
+    transform: translateZ(0.2px) scale(0.8);
+    z-index: 200;
+    top: 200px;
+    left: 500px;
+  }
+  .container :nth-child(3) {
+    transform: translateZ(0.3px) scale(0.7);
+    z-index: 300;
+    top: 400px;
+    left: 600px;
+  }
+  .container :nth-child(4) {
+    transform: translateZ(0.1px) scale(0.9);
+    z-index: 100;
+    top: 500px;
+    left: 500px;
+  }
+  .container :nth-child(5) {
+    transform: translateZ(-2px) scale(3);
+    z-index: -2000;
+    top: 2000px;
+    left: 2000px;
+  }
+  .container :nth-child(6) {
+    transform: translateZ(0.4px) scale(0.6);
+    z-index: 400;
+    top: 600px;
+    left: 300px;
+  }
+  .container :nth-child(7) {
+    transform: translateZ(-1px) scale(2);
+    z-index: -1000;
+    top: 400px;
+    left: 1000px;
+  }
+  .container :nth-child(8) {
+    transform: translateZ(-0.4px) scale(1.4);
+    z-index: -400;
+    top: 100px;
+    left: 1400px;
+  }
+  .container :nth-child(9) {
+    transform: translateZ(0.4px) scale(0.6);
+    z-index: 400;
+    top: 900px;
+    left: 500px;
+  }
+  .container :nth-child(10) {
+    transform: translateZ(-1px) scale(2);
+    z-index: -1000;
+    top: 1600px;
+    left: 100px;
+  }
+  .container > * {
+    position: absolute;
+  }
+  
+  body {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    background: #eef1f3;
+    line-height: 1;
+  }
+  
+  h1,
+  h2 {
+    font-weight: 100;
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 5em;
+    color: #1586d1;
+  }
+  
+  h2 {
+    font-size: 3em;
+    transform: translateZ(0.2px) scale(0.8);
+    z-index: 200;
+  }
+  ul li {
+    text-decoration: none;
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  a {
+    color: rgb(7, 7, 7);
+  }
+  
+  .row {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+    clear: both;
+  }
+  .row img {
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .gallery ul li {
+    float: left;
+    margin: 0 0.8771929825%;
+    overflow: hidden;
+  }
+  span h1 {
+    font-size: 35px;
+  }
+  header {
+    background-color: #84b4b1;
+    color: rgb(46, 45, 45);
+    text-align: center;
+    padding: 30px 0 120px;
+  }
+  header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 0.8;
+    padding-top: 50px;
+    font-family: "Montserrat", sans-serif;
+  }
+  header h1 span {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 25px;
+    line-height: 1;
+  }
+  header p {
+    padding-top: 30px;
+  }
+  
+  .gallery {
+    padding: 40px 0 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery ul {
+    padding-top: 50px;
+    position: relative;
+  }
+  .gallery ul li {
+    margin-bottom: 20px;
+    width: 23.2456140351%;
+    position: relative;
+  }
+  .gallery ul li a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .gallery ul li a:before {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 40%;
+    left: 50%;
+    margin: -14px 0 0 -16px;
+    background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asodipodi%3D%22http%3A//sodipodi.sourceforge.net/DTD/sodipodi-0.dtd%22%20xmlns%3Ainkscape%3D%22http%3A//www.inkscape.org/namespaces/inkscape%22%20inkscape%3Aversion%3D%220.48.4%20r9939%22%20sodipodi%3Adocname%3D%22icon-fullscreen.svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20960%20560%22%0A%09%20enable-background%3D%22new%200%200%20960%20560%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Csodipodi%3Anamedview%20%20borderopacity%3D%221%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23666666%22%20objecttolerance%3D%2210%22%20gridtolerance%3D%2210%22%20guidetolerance%3D%2210%22%20showgrid%3D%22false%22%20fit-margin-top%3D%220%22%20fit-margin-left%3D%220%22%20inkscape%3Azoom%3D%227.375%22%20inkscape%3Acx%3D%22-5.1525424%22%20inkscape%3Acy%3D%2216%22%20id%3D%22namedview11%22%20inkscape%3Awindow-x%3D%22-8%22%20inkscape%3Awindow-y%3D%22-8%22%20fit-margin-right%3D%220%22%20inkscape%3Apageopacity%3D%220%22%20fit-margin-bottom%3D%220%22%20inkscape%3Awindow-width%3D%221366%22%20inkscape%3Awindow-height%3D%22706%22%20inkscape%3Awindow-maximized%3D%221%22%20inkscape%3Apageshadow%3D%222%22%20inkscape%3Acurrent-layer%3D%22svg2%22%3E%0A%09%3C/sodipodi%3Anamedview%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22220%22%20y%3D%22260%22%20fill%3D%22%23FFFFFF%22%20width%3D%22536%22%20height%3D%2224%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%22476%22%20y%3D%224%22%20fill%3D%22%23FFFFFF%22%20width%3D%2224%22%20height%3D%22556%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A)
+      no-repeat;
+    content: "";
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .gallery ul li a:hover:before {
+    top: 50%;
+    opacity: 1;
+  }
+  .gallery ul li a:after {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .gallery ul li a:hover:after {
+    opacity: 1;
+  }
+  
+  .port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    background: #ffffff;
+    background-color: #fafafa;
+    z-index: 103;
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    border-bottom: 1px solid #d0d0d0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .port img {
+    width: 50%;
+  }
+  .port .description {
+    float: left;
+    width: 50%;
+    max-height: 100%;
+    padding: 0 40px 40px;
+    overflow: auto;
+  }
+  .port h1 {
+    font-size: 35px;
+    line-height: 2.3;
+    padding: 0;
+  }
+  .port > * {
+    opacity: 0;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+  }
+  .port.item_open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .port > * {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .close {
+    width: 21px;
+    height: 21px;
+    background: url(data:image/svg+xml;utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%0A%09%20id%3D%22svg2%22%20xmlns%3Adc%3D%22http%3A//purl.org/dc/elements/1.1/%22%20xmlns%3Acc%3D%22http%3A//creativecommons.org/ns%23%22%20xmlns%3Ardf%3D%22http%3A//www.w3.org/1999/02/22-rdf-syntax-ns%23%22%20xmlns%3Asvg%3D%22http%3A//www.w3.org/2000/svg%22%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2021%2021%22%0A%09%20enable-background%3D%22new%200%200%2021%2021%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20id%3D%22layer1%22%20transform%3D%22translate%280%2C-1031.3622%29%22%3E%0A%09%3Cpath%20id%3D%22path2987%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M0%2C1031.4l21%2C21%22/%3E%0A%09%3Cpath%20id%3D%22path2989%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20d%3D%22M21%2C1031.4l-21%2C21%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A%0A)
+      no-repeat;
+    position: absolute;
+    right: 10px;
+    top: -121px;
+    opacity: 1;
+    z-index: 1004;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+  .item_open .close {
+    opacity: 1;
+    top: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&family=Yeseva+One&display=swap");
+  
+  :root {
+      --bg-color: hsl(35 50% 96%);
+      --text-color: hsl(200 10% 10%);
+      --text-accent-color: hsl(200 2% 44%);
+      --text-ff: "Cardo", serif;
+      --heading-ff: "Yeseva One", serif;
+  }
+  p {
+      margin: 1rem 0;
+  }
+  
+  p:first-of-type {
+      position: relative;
+      max-width: 16em;
+      font-size: 1.4em;
+      line-height: 1.4;
+      font-style: italic;
+  }
+  
+  p:last-of-type::after {
+      content: "§";
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+      margin-bottom: 6em;
+      font-size: 2em;
+      line-height: 1;
+      transform: rotate(90deg);
+  }
+  
+  p:first-of-type::first-letter {
+      float: left;
+      margin-top: -0.58em;
+      margin-right: 0.1em;
+      margin-left: -0.58em;
+      padding: 0.2em 0.3em;
+      font-family: var(--heading-ff);
+      font-size: 2em;
+      font-style: normal;
+      line-height: 1;
+      color: var(--bg-color);
+      background: var(--text-color);
+      border: 0.25em double;
+  }
+  h1 {
+      grid-column: 1 / -1;
+      justify-self: center;
+      margin-top: -0.325em;
+      font-family: var(--heading-ff);
+      font-size: 15vw;
+      line-height: 1.2;
+      white-space: nowrap;
+  }
+  
+  h2 {
+      margin-top: 3em;
+      font-size: 1.6em;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+  }
+  h3 {
+      position: relative;
+      margin: 0.5em 0 2em;
+      font-size: 0.8em;
+      color: var(--text-accent-color);
+  }
+  
+  h3::after {
+      content: "";
+      display: block;
+      margin-top: 0.5em;
+      margin-left: 0.25em;
+      width: 2px;
+      height: 3em;
+      background: repeating-linear-gradient(
+          to bottom,
+          transparent 0 10%,
+          var(--text-color) 10% 25%
+      );
+  }
