@@ -25,10 +25,10 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // https://css-tricks.com/meta-theme-color-npm install gatsby-plugin-manifestand-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/logo3.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
